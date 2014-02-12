@@ -22,7 +22,8 @@ GIT
 
 GIT
   remote: git://github.com/travis-ci/travis-core.git
-  revision: 7e1de991f704b5b2948789279de890e56eeeb65b
+  revision: 714043845654f624c9391bd7dbb8b8a1746c77ae
+  branch: ha-feature-hipchat_api_v2
   specs:
     travis-core (0.0.1)
       actionmailer (~> 3.2.12)
