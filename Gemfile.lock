@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/getsentry/raven-ruby.git
-  revision: 3563a6b08bfde1d1b603b40cc092c0a75a2ab032
+  revision: 5fc3a9a58cd7e10182421434bba44f8e70465900
   specs:
     sentry-raven (0.7.1)
       faraday (>= 0.7.6)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/travis-ci/travis-core.git
-  revision: bda374349af3b086840fc8c0f590bdc03b4a9407
+  revision: 37d2d6149ef8bab58f6ad4befc89da56e5f8354b
   branch: sf-te
   specs:
     travis-core (0.0.1)
@@ -52,7 +52,7 @@ GIT
 
 GIT
   remote: git://github.com/travis-ci/travis-support.git
-  revision: d326f5c314bf466509a6abe6d7d2d8b15bba6869
+  revision: b4fa625a063842f1b1cc7b186b9c8accedfe4fe0
   branch: sf-te
   specs:
     travis-support (0.0.1)
@@ -60,12 +60,12 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (3.2.16)
-      actionpack (= 3.2.16)
+    actionmailer (3.2.17)
+      actionpack (= 3.2.17)
       mail (~> 2.5.4)
-    actionpack (3.2.16)
-      activemodel (= 3.2.16)
-      activesupport (= 3.2.16)
+    actionpack (3.2.17)
+      activemodel (= 3.2.17)
+      activesupport (= 3.2.17)
       builder (~> 3.0.0)
       erubis (~> 2.7.0)
       journey (~> 1.0.4)
@@ -73,26 +73,27 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
-    activemodel (3.2.16)
-      activesupport (= 3.2.16)
+    activemodel (3.2.17)
+      activesupport (= 3.2.17)
       builder (~> 3.0.0)
-    activerecord (3.2.16)
-      activemodel (= 3.2.16)
-      activesupport (= 3.2.16)
+    activerecord (3.2.17)
+      activemodel (= 3.2.17)
+      activesupport (= 3.2.17)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
-    activerecord-jdbc-adapter (1.2.9.1)
-    activerecord-jdbcpostgresql-adapter (1.2.9)
-      activerecord-jdbc-adapter (~> 1.2.9)
-      jdbc-postgres (>= 9.1, < 9.3)
-    activesupport (3.2.16)
+    activerecord-jdbc-adapter (1.3.6)
+      activerecord (>= 2.2)
+    activerecord-jdbcpostgresql-adapter (1.3.6)
+      activerecord-jdbc-adapter (~> 1.3.6)
+      jdbc-postgres (>= 9.1)
+    activesupport (3.2.17)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     addressable (2.3.5)
     arel (3.0.3)
     atomic (1.1.14-java)
     avl_tree (1.1.3)
-    backports (3.3.5)
+    backports (3.6.0)
     bouncy-castle-java (1.5.0147)
     builder (3.0.4)
     celluloid (0.12.4)
@@ -100,18 +101,18 @@ GEM
       timers (>= 1.0.0)
     coderay (1.1.0)
     connection_pool (1.2.0)
-    crack (0.4.1)
-      safe_yaml (~> 0.9.0)
-    dalli (2.6.4)
+    crack (0.4.2)
+      safe_yaml (~> 1.0.0)
+    dalli (2.7.0)
     data_migrations (0.0.1)
       activerecord
       rake
     database_cleaner (0.8.0)
     diff-lcs (1.1.3)
     erubis (2.7.0)
-    facter (1.7.4)
-    faraday (0.8.8)
-      multipart-post (~> 1.2.0)
+    facter (1.7.5)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.3-java)
     formatador (0.2.4)
     gh (0.13.2)
@@ -135,7 +136,7 @@ GEM
     hitimes (1.2.1-java)
     httpclient (2.3.4.1)
     i18n (0.6.9)
-    jdbc-postgres (9.2.1004)
+    jdbc-postgres (9.3.1100)
     journey (1.0.4)
     jruby-openssl (0.8.10)
       bouncy-castle-java (>= 1.5.0147)
@@ -149,24 +150,26 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     march_hare (2.0.0-java)
-    metaclass (0.0.1)
+    metaclass (0.0.4)
     method_source (0.8.2)
     metriks (0.9.9.5)
       atomic (~> 1.0)
       avl_tree (~> 1.1.2)
       hitimes (~> 1.1)
-    micro_migrations (0.0.1)
+    micro_migrations (0.0.2)
+      activerecord
+      railties
     mime-types (1.25.1)
     mocha (0.10.5)
       metaclass (~> 0.0.1)
-    multi_json (1.8.2)
-    multipart-post (1.2.0)
-    net-http-persistent (2.9)
+    multi_json (1.8.4)
+    multipart-post (2.0.0)
+    net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
     newrelic_rpm (3.4.2.1)
-    polyglot (0.3.3)
+    polyglot (0.3.4)
     proxies (0.2.1)
-    pry (0.9.12.4-java)
+    pry (0.9.12.6-java)
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
@@ -182,22 +185,22 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
-    railties (3.2.16)
-      actionpack (= 3.2.16)
-      activesupport (= 3.2.16)
+    railties (3.2.17)
+      actionpack (= 3.2.17)
+      activesupport (= 3.2.17)
       rack-ssl (~> 1.3.2)
       rake (>= 0.8.7)
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     rake (10.1.1)
-    rb-fsevent (0.9.3)
+    rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
       ffi (>= 0.5.0)
-    rb-kqueue (0.2.0)
+    rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
-    redis (3.0.6)
+    redis (3.0.7)
     redis-namespace (1.4.1)
       redis (~> 3.0.4)
     rspec (2.7.0)
@@ -208,9 +211,9 @@ GEM
     rspec-expectations (2.7.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.7.0)
-    s3 (0.3.17)
+    s3 (0.3.21)
       proxies (~> 0.2.0)
-    safe_yaml (0.9.7)
+    safe_yaml (1.0.1)
     sidekiq (2.8.0)
       celluloid (~> 0.12.0)
       connection_pool (~> 1.0)
@@ -231,7 +234,8 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     thor (0.14.6)
     tilt (1.4.1)
-    timers (1.1.0)
+    timers (2.0.0)
+      hitimes
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
